@@ -342,6 +342,15 @@ p {
   inset: 0;
   background: url('/hero-fallback.jpg') 60% 100% / cover no-repeat, var(--bg);
 }
+/* celular: a foto aparece na hora e o 3D entra por cima quando estiver pronto, sem tela preta */
+@media (max-width: 900px) {
+  .hero-fallback {
+    display: block;
+    position: absolute;
+    inset: 0;
+    background: url('/hero-fallback.jpg') 60% 100% / cover no-repeat, var(--bg);
+  }
+}
 
 [data-range] {
   will-change: opacity, translate;

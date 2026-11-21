@@ -14,6 +14,7 @@
     <meta property="og:description" content="Scooters, triciclos e motos elétricas em Fortaleza. O futuro anda em silêncio." />
     <meta property="og:locale" content="pt_BR" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" as="image" href="/hero-fallback.jpg" media="(max-width: 900px)" fetchpriority="high" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -68,9 +69,9 @@
       <!-- ============ HERO 3D (pinado) ============ -->
       <section class="hero" id="top" aria-label="Apresentação">
         <div class="hero-sticky">
+          <div class="hero-fallback" aria-hidden="true"></div>
           <canvas id="scene" aria-hidden="true"></canvas>
           <div class="hero-shade" aria-hidden="true"></div>
-          <div class="hero-fallback" aria-hidden="true"></div>
 
           <div class="hero-intro" data-range="0,0.13">
             <p class="eyebrow"><span class="pulse"></span>Concessionária de veículos elétricos · Fortaleza</p>

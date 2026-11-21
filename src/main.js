@@ -71,8 +71,8 @@ const start3D = () =>
     })
     .catch(fallback);
 
-if (document.readyState === 'complete') setTimeout(start3D, 200);
-else addEventListener('load', () => setTimeout(start3D, 200), { once: true });
+// começa assim que o navegador der uma folga, sem esperar o evento load (no celular ele demora)
+(window.requestIdleCallback || setTimeout)(start3D, { timeout: 1200 });
 
 let heroVisible = true;
 new IntersectionObserver(
