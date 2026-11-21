@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>MotoEletrica · Scooters e motos elétricas em Fortaleza</title>
+    <meta
+      name="description"
+      content="Concessionária de veículos elétricos em Fortaleza. Scooters, triciclos e motos elétricas no atacado e no varejo, com assistência técnica especializada."
+    />
+    <meta name="theme-color" content="#070708" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="MotoEletrica" />
+    <meta property="og:description" content="Scooters, triciclos e motos elétricas em Fortaleza. O futuro anda em silêncio." />
+    <meta property="og:locale" content="pt_BR" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Michroma&family=Unbounded:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#efe3cc" />
+          <stop offset=".5" stop-color="#c6b18c" />
+          <stop offset="1" stop-color="#8d7a58" />
+        </linearGradient>
+        <symbol id="mark" viewBox="0 0 48 48">
+          <circle cx="24" cy="24" r="21" fill="none" stroke="url(#gGold)" stroke-width="2.5" />
+          <path d="M27 8 14 27h8l-2 13 14-20h-8z" fill="url(#gGold)" />
+        </symbol>
+        <symbol id="wa" viewBox="0 0 24 24">
+          <path
+            fill="currentColor"
+            d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 1.8a8.2 8.2 0 1 1-4.2 15.3l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 0 1 12 3.8Zm-3.3 4c-.2 0-.5 0-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.2 5 4.4 2.5 1 3 .8 3.5.7.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4l-.6-.4-2-1c-.3-.1-.5-.1-.7.2l-.9 1.1c-.2.2-.3.2-.6.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6Z"
+          />
+        </symbol>
+        <symbol id="arrow" viewBox="0 0 24 24">
+          <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6" />
+        </symbol>
+      </defs>
+    </svg>
+
+    <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="nav" id="nav">
+      <a class="brand" href="#top" aria-label="MotoEletrica, voltar ao início">
+        <svg class="brand-mark"><use href="#mark" /></svg>
+        <span class="brand-text"><b>MOTOELETRICA</b><small>MOTOS ELÉTRICAS</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Seções do site">
+        <a href="#por-que">Por que elétrica</a>
+        <a href="#economia">Economia</a>
+        <a href="#modelos">Modelos</a>
+        <a href="#loja">Loja</a>
+        <a href="#duvidas">Dúvidas</a>
+      </nav>
+      <a class="btn btn-gold btn-sm" data-wa="Olá! Vi o site da MotoEletrica e quero saber mais." href="#">
+        <svg class="ico"><use href="#wa" /></svg><span>Fale conosco</span>
+      </a>
+    </header>
+
+    <main id="conteudo">
+      <!-- ============ HERO 3D (pinado) ============ -->
+      <section class="hero" id="top" aria-label="Apresentação">
+        <div class="hero-sticky">
+          <canvas id="scene" aria-hidden="true"></canvas>
+          <div class="hero-shade" aria-hidden="true"></div>
+          <div class="hero-fallback" aria-hidden="true"></div>
+
+          <div class="hero-intro" data-range="0,0.13">
+            <p class="eyebrow"><span class="pulse"></span>Concessionária de veículos elétricos · Fortaleza</p>
+            <h1>O futuro anda <em>em silêncio.</em></h1>
+            <p class="lead">
+              Scooters, triciclos e motos elétricas com assistência técnica especializada. Atacado e varejo.
+            </p>
+            <div class="cta-row">
+              <a class="btn btn-gold" data-wa="Olá! Vi o site da MotoEletrica e quero conhecer os modelos." href="#">
+                <svg class="ico"><use href="#wa" /></svg><span>Falar no WhatsApp</span>
+              </a>
+              <a class="btn btn-ghost" href="#loja"><span>Visitar a loja</span></a>
+            </div>
+          </div>
+
+          <div class="swatches" data-range="0,0.5">
+            <span class="swatch-label">Cor <b id="colorName">Pérola</b></span>
+            <div class="swatch-list" role="radiogroup" aria-label="Escolha a cor da scooter">
+              <button class="swatch" role="radio" aria-checked="true" aria-label="Pérola" data-color="#ece7de" data-name="Pérola" style="--c: #ece7de"></button>
+              <button class="swatch" role="radio" aria-checked="false" aria-label="Rosa" data-color="#e7a2b6" data-name="Rosa" style="--c: #e7a2b6"></button>
+              <button class="swatch" role="radio" aria-checked="false" aria-label="Azul-claro" data-color="#9fd3ea" data-name="Azul-claro" style="--c: #9fd3ea"></button>
+              <button class="swatch" role="radio" aria-checked="false" aria-label="Azul" data-color="#2457c9" data-name="Azul" style="--c: #2457c9"></button>
+              <button class="swatch" role="radio" aria-checked="false" aria-label="Vermelho" data-color="#c2202c" data-name="Vermelho" style="--c: #c2202c"></button>
+              <button class="swatch" role="radio" aria-checked="false" aria-label="Preto" data-color="#18181b" data-name="Preto" style="--c: #18181b"></button>
+            </div>
+          </div>
+
+          <div class="scroll-cue" data-range="0,0.07" aria-hidden="true">
+            <span class="mouse"><i></i></span>
+            Role para dar a partida
+          </div>
+
+          <div class="chapter chapter-1" data-range="0.16,0.35">
+            <p class="kicker">01 · Silêncio</p>
+            <h2>Liga sem barulho.<br />Anda sem fumaça.</h2>
+            <p>Motor elétrico, zero ronco, zero cheiro de gasolina. Só você e a cidade.</p>
+          </div>
+
+          <div class="chapter chapter-2" data-range="0.37,0.56">
+            <p class="kicker">02 · Detalhes</p>
+            <h2>Tudo no lugar certo.</h2>
+            <ul class="chapter-feats">
+              <li>Farol LED</li>
+              <li>Motor no cubo da roda</li>
+              <li>Freio a disco</li>
+              <li>Recarga na tomada</li>
+            </ul>
+          </div>
+
+          <div class="hotspots" aria-hidden="true">
+            <div class="hotspot" data-key="farol" data-range="0.39,0.56">
+              <i></i><span><b>Farol LED</b>Ver e ser visto à noite</span>
+            </div>
+            <div class="hotspot hs-left" data-key="motor" data-range="0.41,0.56">
+              <i></i><span><b>Motor no cubo da roda</b>Sem óleo, sem corrente</span>
+            </div>
+            <div class="hotspot" data-key="freio" data-range="0.43,0.56">
+              <i></i><span><b>Freio a disco</b>Frenagem firme e segura</span>
+            </div>
+            <div class="hotspot hs-up" data-key="recarga" data-range="0.45,0.56">
+              <i></i><span><b>Recarga na tomada</b>Em casa ou no trabalho</span>
+            </div>
+          </div>
+
+          <div class="chapter chapter-3" data-range="0.68,0.97">
+            <p class="kicker">03 · Liberdade</p>
+            <h2 class="mega"><span>Zero gasolina.</span><span class="outline">Zero barulho.</span></h2>
+          </div>
+
+          <div class="hud" data-range="0.6,0.95" aria-hidden="true">
+            <div><small>Velocidade</small><b id="hudSpeed">0 km/h</b></div>
+            <div><small>Gasolina usada</small><b>0,00 L</b></div>
+            <div><small>Ruído do motor</small><b>quase zero</b></div>
+          </div>
+
+          <div class="hero-progress" aria-hidden="true"><span id="heroBar"></span></div>
+          <div class="hero-exit" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <!-- ============ FAIXA ============ -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Scooters elétricas</span><i></i><span>Triciclos</span><i></i><span>Motos elétricas</span><i></i
+          ><span>Atacado &amp; varejo</span><i></i><span>Assistência técnica</span><i></i> <span>Scooters elétricas</span
+          ><i></i><span>Triciclos</span><i></i><span>Motos elétricas</span><i></i><span>Atacado &amp; varejo</span><i></i
+          ><span>Assistência técnica</span><i></i>
+        </div>
+      </div>
+
+      <!-- ============ NÚMEROS ============ -->
+      <section class="stats light w" aria-label="A MotoEletrica em números">
+        <div class="container stats-grid">
+          <div class="stat reveal">
+            <b><span data-count="145">145</span> mil+</b>
+            <span>pessoas acompanham a MotoEletrica no Instagram</span>
+          </div>
+          <div class="stat reveal">
+            <b>Atacado &amp; varejo</b>
+            <span>para você rodar ou para a sua loja revender</span>
+          </div>
+          <div class="stat reveal">
+            <b>Assistência</b>
+            <span>técnica especializada em veículos elétricos</span>
+          </div>
+          <div class="stat reveal">
+            <b>Loja física</b>
+            <span>no Meireles, em Fortaleza</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ POR QUE ELÉTRICA ============ -->
+      <section class="section why light" id="por-que">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="kicker">Por que elétrica</p>
+            <h2>Menos custo. Menos barulho. <span class="gold">Mais rua.</span></h2>
+            <p class="section-lead">Quem troca a bomba de gasolina pela tomada sente a diferença logo no primeiro mês.</p>
+          </header>
+          <div class="why-grid">
+            <article class="why-card reveal">
+              <svg class="why-ico" viewBox="0 0 24 24"><path d="M9 2v5M15 2v5M6 7h12v4a6 6 0 0 1-12 0zM12 17v5" /></svg>
+              <h3>Centavos por quilômetro</h3>
+              <p>Recarregue na tomada de casa e rode gastando uma fração do que gastaria com gasolina.</p>
+            </article>
+            <article class="why-card reveal">
+              <svg class="why-ico" viewBox="0 0 24 24"><path d="M11 5 6 9H3v6h3l5 4zM16 9.5l5 5M21 9.5l-5 5" /></svg>
+              <h3>Silêncio de verdade</h3>
+              <p>Sem ronco, sem vibração e sem fumaça. Mais conforto para você e para a sua vizinhança.</p>
+            </article>
+            <article class="why-card reveal">
+              <svg class="why-ico" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z" /></svg>
+              <h3>Manutenção simples</h3>
+              <p>Nada de troca de óleo, filtro ou vela. Menos peças desgastando e menos visitas à oficina.</p>
+            </article>
+            <article class="why-card reveal">
+              <svg class="why-ico" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5" /><path d="M2.5 20a6.5 6.5 0 0 1 13 0" /><circle cx="17.5" cy="9.5" r="2.5" /><path d="M16.5 14.4A5 5 0 0 1 22 19.5" /></svg>
+              <h3>Para todas as idades</h3>
+              <p>Scooters leves e triciclos estáveis para trabalhar, estudar, fazer entregas ou passear.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CALCULADORA ============ -->
+      <section class="section calc" id="economia">
+        <div class="container calc-grid">
+          <div class="calc-copy reveal">
+            <p class="kicker">Calculadora de economia</p>
+            <h2>Quanto fica no seu bolso?</h2>
+            <p class="section-lead">
+              Ajuste a sua rotina e compare o custo de rodar no elétrico com o de um veículo a gasolina.
+            </p>
+            <p class="fineprint">
+              Estimativa. Considera moto a gasolina fazendo 35 km/L, carro 11 km/L e elétrica consumindo cerca de
+              3 kWh a cada 100 km com energia a R$ 0,95/kWh. O consumo real varia conforme modelo, peso e trajeto.
+            </p>
+          </div>
+          <div class="calc-card reveal">
+            <div class="seg" role="radiogroup" aria-label="Comparar com">
+              <button role="radio" aria-checked="true" data-mode="moto">Moto a gasolina</button>
+              <button role="radio" aria-checked="false" data-mode="carro">Carro</button>
+            </div>
+            <label class="field">
+              <span>Quilômetros por dia <output id="kmOut">30 km</output></span>
+              <input type="range" id="km" min="5" max="120" step="1" value="30" />
+            </label>
+            <label class="field">
+              <span>Dias por semana <output id="daysOut">6 dias</output></span>
+              <input type="range" id="days" min="1" max="7" step="1" value="6" />
+            </label>
+            <label class="field">
+              <span>Preço da gasolina <output id="fuelOut">R$ 6,29</output></span>
+              <input type="range" id="fuel" min="4.5" max="9" step="0.01" value="6.29" />
+            </label>
+            <div class="result" aria-live="polite">
+              <p>Economia estimada por ano</p>
+              <strong id="saveYear">R$ 0</strong>
+              <p class="muted">cerca de <b id="saveMonth">R$ 0</b> por mês</p>
+            </div>
+            <div class="bars">
+              <div class="bar-row">
+                <span id="gasLabel">Moto a gasolina</span>
+                <div class="bar"><i id="barGas"></i></div>
+                <b id="costGas">R$ 0</b>
+              </div>
+              <div class="bar-row">
+                <span>Elétrica MotoEletrica</span>
+                <div class="bar"><i id="barEle" class="ele"></i></div>
+                <b id="costEle">R$ 0</b>
+              </div>
+              <p class="bars-note">custo de energia ou combustível por mês</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ MODELOS ============ -->
+      <section class="section models light w" id="modelos">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="kicker">Nossos modelos</p>
+            <h2>Escolha a sua <span class="gold">moto.</span></h2>
+            <p class="section-lead">Toque em uma moto para ver os detalhes, as cores e falar com a loja sobre ela.</p>
+          </header>
+          <div class="model-grid">
+            <button class="model-card reveal" type="button" data-model="global-1000" aria-haspopup="dialog">
+              <span class="model-photo" data-photo="global-1000"></span>
+              <span class="model-info">
+                <span class="model-tag">Scooter elétrica</span>
+                <span class="model-name">Global 1000</span>
+                <span class="model-line">Painel digital, porta-objetos e baú traseiro.</span>
+                <span class="model-more">Ver detalhes <svg class="ico"><use href="#arrow" /></svg></span>
+              </span>
+            </button>
+            <button class="model-card reveal" type="button" data-model="global-500" aria-haspopup="dialog">
+              <span class="model-photo" data-photo="global-500"></span>
+              <span class="model-info">
+                <span class="model-tag">Moto elétrica</span>
+                <span class="model-name">Global 500</span>
+                <span class="model-line">A moto elétrica que trabalha com você, sem te cobrar por isso.</span>
+                <span class="model-more">Ver detalhes <svg class="ico"><use href="#arrow" /></svg></span>
+              </span>
+            </button>
+            <button class="model-card reveal" type="button" data-model="global-x" aria-haspopup="dialog">
+              <span class="model-photo" data-photo="global-x"></span>
+              <span class="model-info">
+                <span class="model-tag">Moto elétrica</span>
+                <span class="model-name">Global X</span>
+                <span class="model-line">Motor de 500W, até 32 km/h e capacidade para 150 kg.</span>
+                <span class="model-more">Ver detalhes <svg class="ico"><use href="#arrow" /></svg></span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <dialog class="model-dialog" id="modelDialog" aria-labelledby="mdName" data-lenis-prevent>
+        <form method="dialog"><button class="md-close" aria-label="Fechar detalhes">×</button></form>
+        <div class="md-photo" id="mdPhoto"></div>
+        <div class="md-body">
+          <p class="kicker" id="mdTag"></p>
+          <h3 id="mdName"></h3>
+          <p class="md-lead" id="mdLead"></p>
+          <div class="md-stats" id="mdStats"></div>
+          <p class="md-sub">Em destaque</p>
+          <ul class="checks" id="mdFeats"></ul>
+          <div class="md-colors" id="mdColors"></div>
+          <p class="md-note" id="mdNote"></p>
+          <div class="cta-row">
+            <a class="btn btn-gold" id="mdWa" href="#"><svg class="ico"><use href="#wa" /></svg><span>Perguntar sobre esta moto</span></a>
+            <a class="btn btn-ghost" href="#loja" id="mdLoja"><span>Ver na loja</span></a>
+          </div>
+        </div>
+      </dialog>
+
+      <!-- ============ ALERTA DE GOLPE ============ -->
+      <section class="alert-band" aria-labelledby="golpe-title">
+        <div class="container alert-inner reveal">
+          <div class="alert-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 3 2 20h20L12 3Z" /><path d="M12 10v4.5M12 17.5v.01" /></svg>
+          </div>
+          <div class="alert-copy">
+            <h2 id="golpe-title">Atenção: a MotoEletrica <u>não vende online</u>.</h2>
+            <p>
+              Desconfie de perfis, sites ou anúncios que peçam pagamento antecipado em nome da MotoEletrica. Tire suas dúvidas
+              pelo WhatsApp oficial e feche a sua compra com segurança na loja física.
+            </p>
+          </div>
+          <a class="btn btn-dark" data-wa="Olá! Quero confirmar se estou falando com o WhatsApp oficial da MotoEletrica." href="#">
+            <svg class="ico"><use href="#wa" /></svg><span>WhatsApp oficial</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- ============ ASSISTÊNCIA + REVENDA ============ -->
+      <section class="section duo light" id="servicos">
+        <div class="container duo-grid">
+          <article class="duo-card reveal" id="assistencia">
+            <p class="kicker">Assistência técnica</p>
+            <h3>Quem vende, cuida.</h3>
+            <p>
+              Revisão e manutenção feitas por técnicos especializados em veículos elétricos. O seu elétrico continua em
+              boas mãos depois da compra.
+            </p>
+            <ul class="checks">
+              <li>Especialistas em elétricos</li>
+              <li>Revisões e manutenção</li>
+              <li>Atendimento na loja</li>
+            </ul>
+            <a class="link-arrow" data-wa="Olá! Preciso de assistência técnica para o meu elétrico." href="#">
+              Falar com a assistência <svg class="ico"><use href="#arrow" /></svg>
+            </a>
+          </article>
+          <article class="duo-card duo-gold reveal" id="revenda">
+            <p class="kicker">Atacado &amp; varejo</p>
+            <h3>Seja um revendedor MotoEletrica.</h3>
+            <p>
+              Tem loja ou quer começar a vender veículos elétricos? Trabalhamos com atacado. Fale com a gente e conheça as
+              condições para lojistas.
+            </p>
+            <ul class="checks">
+              <li>Compra no atacado</li>
+              <li>Linha completa de elétricos</li>
+              <li>Suporte de quem é referência</li>
+            </ul>
+            <a class="link-arrow" data-wa="Olá! Tenho interesse em comprar no atacado e revender os elétricos da MotoEletrica." href="#">
+              Quero revender <svg class="ico"><use href="#arrow" /></svg>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ DÚVIDAS ============ -->
+      <section class="section faq light w" id="duvidas">
+        <div class="container faq-grid">
+          <header class="section-head reveal">
+            <p class="kicker">Dúvidas frequentes</p>
+            <h2>Perguntou, respondemos.</h2>
+            <p class="section-lead">Não achou a sua dúvida? Chame no WhatsApp e um consultor responde.</p>
+          </header>
+          <div class="faq-list reveal">
+            <details>
+              <summary>Preciso de CNH para pilotar?</summary>
+              <p>
+                Depende do modelo. Pela Resolução 996/2023 do Contran, os equipamentos autopropelidos (até 32 km/h) não
+                exigem habilitação nem emplacamento. Já os ciclomotores elétricos (até 50 km/h) exigem ACC ou CNH
+                categoria A e registro no Detran. A nossa equipe ajuda você a escolher o modelo certo para o seu uso.
+              </p>
+            </details>
+            <details>
+              <summary>Como e onde eu carrego?</summary>
+              <p>
+                Na tomada comum, em casa ou no trabalho, com o carregador que acompanha o veículo. O tempo de recarga
+                varia conforme o modelo e a bateria.
+              </p>
+            </details>
+            <details>
+              <summary>Qual é a autonomia?</summary>
+              <p>
+                Depende do modelo, da bateria, do peso e do trajeto. Os nossos consultores mostram a autonomia de cada
+                modelo e indicam o ideal para a sua rotina.
+              </p>
+            </details>
+            <details>
+              <summary>Vocês vendem pela internet?</summary>
+              <p>
+                Não. A MotoEletrica não vende online. Tire as suas dúvidas pelo WhatsApp oficial e feche a compra na loja
+                física, no Meireles. Desconfie de quem pedir pagamento antecipado em nosso nome.
+              </p>
+            </details>
+            <details>
+              <summary>Vocês têm assistência técnica?</summary>
+              <p>Sim. Temos assistência técnica especializada em veículos elétricos para revisão e manutenção.</p>
+            </details>
+            <details>
+              <summary>Vendem no atacado?</summary>
+              <p>
+                Sim, trabalhamos com atacado e varejo. Se você tem uma loja ou quer revender, fale com a gente pelo
+                WhatsApp.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ LOJA ============ -->
+      <section class="section store light" id="loja">
+        <div class="container store-grid">
+          <div class="store-info reveal">
+            <p class="kicker">Loja física</p>
+            <h2>Venha ver de perto e escolher a sua.</h2>
+            <address>
+              Av. Beira Mar, 1000<br />
+              Meireles · Fortaleza – CE<br />
+              CEP 60165-121
+            </address>
+            <div class="cta-row">
+              <a
+                class="btn btn-gold"
+                href="https://www.google.com/maps/dir/?api=1&destination=Av.+Beira+Mar%2C+1000+-+Meireles%2C+Fortaleza+-+CE%2C+60165-121"
+                target="_blank"
+                rel="noopener"
+                ><span>Como chegar</span><svg class="ico"><use href="#arrow" /></svg
+              ></a>
+              <a class="btn btn-ghost" data-wa="Olá! Quero visitar a loja da MotoEletrica." href="#">
+                <svg class="ico"><use href="#wa" /></svg><span>Chamar no WhatsApp</span>
+              </a>
+            </div>
+            <ul class="store-links">
+              <li><a href="https://www.instagram.com/globalmobilidade/" target="_blank" rel="noopener">@globalmobilidade no Instagram</a></li>
+              <li><a href="https://g.page/r/CaQoow3GbLSpEBM/review" target="_blank" rel="noopener">Avalie a MotoEletrica no Google</a></li>
+            </ul>
+          </div>
+          <div class="store-map reveal">
+            <iframe
+              title="Mapa da loja MotoEletrica"
+              src="https://maps.google.com/maps?q=Av.%20Beira%20Mar%2C%201000%20-%20Meireles%2C%20Fortaleza%20-%20CE&z=16&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CTA FINAL ============ -->
+      <section class="final">
+        <div class="container final-inner reveal">
+          <svg class="final-mark" aria-hidden="true"><use href="#mark" /></svg>
+          <h2>Bora rodar <span class="gold">no silêncio?</span></h2>
+          <p>Fale com um consultor e descubra o elétrico ideal para a sua rotina.</p>
+          <a class="btn btn-gold btn-lg" data-wa="Olá! Quero ajuda para escolher o meu elétrico." href="#">
+            <svg class="ico"><use href="#wa" /></svg><span>Falar com um consultor</span>
+          </a>
+          <a class="btn btn-ghost insta-link" href="https://www.instagram.com/globalmobilidade/" target="_blank" rel="noopener">
+            <span>Acompanhe @globalmobilidade no Instagram</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <a class="brand" href="#top" aria-label="MotoEletrica, voltar ao início">
+          <svg class="brand-mark"><use href="#mark" /></svg>
+          <span class="brand-text"><b>MOTOELETRICA</b><small>MOTOS ELÉTRICAS</small></span>
+        </a>
+        <p class="footer-note">Concessionária de veículos elétricos · Atacado e varejo · Fortaleza – CE</p>
+        <nav class="footer-links" aria-label="Links da MotoEletrica">
+          <a href="https://www.instagram.com/globalmobilidade/" target="_blank" rel="noopener">Instagram</a>
+          <a data-wa="Olá! Vi o site da MotoEletrica e quero saber mais." href="#">WhatsApp</a>
+          <a href="https://g.page/r/CaQoow3GbLSpEBM/review" target="_blank" rel="noopener">Avaliar no Google</a>
+        </nav>
+        <p class="copy">© <span id="year">2026</span> MotoEletrica</p>
+      </div>
+    </footer>
+
+    <a class="wa-float" data-wa="Olá! Vi o site da MotoEletrica e quero saber mais." href="#" aria-label="Falar com a MotoEletrica no WhatsApp">
+      <svg><use href="#wa" /></svg>
+    </a>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
